@@ -1,0 +1,53 @@
+{
+  "name": "@restlessbit/aria-button",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Mario Pabon <me@mariopabon.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/restlessbit/aria-button"
+  },
+  "keywords": [
+    "react",
+    "accessibility"
+  ],
+  "files": [
+    "/lib"
+  ],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "example": "parcel ./example/index.html",
+    "prepublishOnly": "yarn build",
+    "test": "jest",
+    "test/watch": "jest --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "peerDependencies": {
+    "react": "16"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/jest": "^23.3.10",
+    "@types/react": "^16.7.11",
+    "@types/react-dom": "^16.0.11",
+    "@types/sinon": "^5.0.7",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "husky": "^1.2.0",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.3",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
+    "react": "16",
+    "react-dom": "^16.6.3",
+    "sinon": "^7.1.1",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.1"
+  }
+}

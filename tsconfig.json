@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "target": "es5",
+    "outDir": "lib",
+    "declaration": true,
+    "inlineSourceMap": true
+  },
+  "include": ["src/index.tsx"]
+}
