@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders children in a span when no component is specified 1`] = `
+exports[`renders children in a span when no tag is specified 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AriaButton>
@@ -66,7 +66,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`renders children in custom component 1`] = `
+exports[`renders children in custom tag 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AriaButton
