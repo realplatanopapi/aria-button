@@ -9,7 +9,7 @@ export interface AriaButtonChildrenProps {
   tabIndex: number
 }
 
-export interface AriaButtonProps {
+export interface AriaButtonProps extends React.HTMLProps<HTMLButtonElement> {
   children: React.ReactNode
   tag?: string
   onClick?: AriaButtonClickEventHandler
