@@ -9,14 +9,14 @@ const createKeyPressEvent = (key: string) => ({
   key
 })
 
-test('renders children in a span when no component is specified', () => {
+test('renders children in a span when no tag is specified', () => {
   const wrapper = shallow(
     <AriaButton>Click me</AriaButton>
   )
   expect(wrapper).toMatchSnapshot()
 })
 
-test('renders children in custom component', () => {
+test('renders children in custom tag', () => {
   const wrapper = shallow(
     <AriaButton tag="div">Click me</AriaButton>
   )

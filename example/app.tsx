@@ -12,7 +12,7 @@ class Example extends React.Component<{
 
   render() {
     return (
-      <> 
+      <>
         {
           React.cloneElement(this.props.children, {
             onClick: () => this.setState({numClicks: this.state.numClicks + 1})
@@ -39,7 +39,7 @@ class Root extends React.Component {
         </Example>
         <h2>Custom component</h2>
         <Example>
-          <AriaButton component="div">
+          <AriaButton tag="div">
             <p>Click me</p>
           </AriaButton>
         </Example>
